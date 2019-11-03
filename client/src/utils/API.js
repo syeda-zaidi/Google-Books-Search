@@ -2,9 +2,10 @@ import axios from "axios";
 
 export default {
 
+
     //ajax call from FE to get all books 
-    getBooks: function () {
-        axios.get("/api/books");
+    getBooks: function (search) {
+        axios.get(`/api/google/${search}`);
     },
 
     getBookById: function (id) {

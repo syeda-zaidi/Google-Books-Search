@@ -1,10 +1,16 @@
 import React from 'react';
-import './App.css';
 import Nav from './components/nav';
+import Jumbotron from './components/jumbotron';
+import FormInput from "./components/form";
 
 function App() {
   return (
-   <Nav />
+    <div>
+      <Nav />
+      <Jumbotron />
+      <FormInput />
+      
+    </div>
   );
 }
 
