@@ -4,20 +4,24 @@ export default {
 
 
     //ajax call from FE to get all books 
-    getBooks: function (search) {
-        axios.get(`/api/google/${search}`);
+    getBooksFromGoogle: function (search) {
+        return axios.get(`/api/google/${search}`);
+    },
+
+    getBooks: function (req, res) {
+        return axios.get("/api/books")
     },
 
     getBookById: function (id) {
-        axios.get("/api/books/" + id);
+        return axios.get("/api/books/" + id);
     },
 
-    saveBook: function(bookObj) {
-        axios.post("/api/books" + bookObj);
+    saveBook: function (bookObj) {
+        return axios.post("/api/books" + bookObj);
     },
 
     deleteBook: function (id) {
-        axios.delete("/api/books/" + id);
+        return axios.delete("/api/books/" + id);
     }
-    
+
 };

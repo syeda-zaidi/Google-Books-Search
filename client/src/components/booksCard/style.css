@@ -1,0 +1,12 @@
+.booksCard {
+    margin: 20px;
+}
+
+.booktitle {
+    font-size: 26px;
+    font-family: monospace;
+}
+
+.book-description {
+    font-size: 16px;
+}

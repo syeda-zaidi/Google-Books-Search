@@ -1,20 +1,25 @@
 import React from "react";
 
-function FormInput(props) {
+export function FormInput(props) {
     return (
         <div className="container-fluid">
             <form>
-                <div class="form-group">
-                    <label for="bookInput"> Search Books </label>
-                    <input type="text" class="form-control" id="bookInput" placeholder=""></input>
+                <div className="form-group">
+                    <label> Search Books</label>
+                    <input className="form-control" {...props} />
                 </div>
 
             </form>
-            <button type="submit" className="btn btn-success"> Submit </button>
         </div>
 
     )
 };
 
-export default FormInput;
+export function SubmitBtn(props) {
+    return (
+        <div className="container-fluid">
+        <button className="btn btn-success" {...props}> Submit </button>
+        </div>
+    )
+}
 
