@@ -1,0 +1,11 @@
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    margin-left: 50px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: cursive; 
+}
